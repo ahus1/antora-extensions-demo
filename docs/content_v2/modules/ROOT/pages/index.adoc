@@ -1,0 +1,8 @@
+= Start Page of the content module
+// This overrides the navigation item
+:navtitle: Start Page
+// Redirect from old pages
+:page-aliases: old-page-page.adoc
+
+This some content from version 2.
+

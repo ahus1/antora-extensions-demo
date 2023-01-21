@@ -1,0 +1,5 @@
+= Start Page
+
+This is the start page of the Antora extensions demo.
+
+See TODO for the source.

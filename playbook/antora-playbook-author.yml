@@ -1,0 +1,50 @@
+site:
+  title: Antora Extension Demo Site
+  # the 404, site-map, and canonical urls are only generated when a url is defined
+  url: https://ahus1.github.io/antora-extensions-demo
+  start_page: ROOT::index.adoc
+content:
+  sources:
+    - url: ..
+      start_paths:
+        - docs/content_v1
+        - docs/content_v2
+        - docs/startpage
+      branches:
+        - 'HEAD'
+
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+    - '@antora/pdf-extension'
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: supplemental_ui
+  output_dir: _antora
+
+runtime:
+  fetch: true
+  cache_dir: ./.cache/antora
+  log:
+    failure_level: error
+
+output:
+  clean: true
+  dir: _site
+
+# Global asciidoc attributes here, used across all versions of documentation
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+    # Antora will resolve extensions listed here that end with something that looks like a file name extension as files relative to the project's folder
+    # therefore append the slash
+    - asciidoctor-highlight.js/
+  attributes:
+    kroki-fetch-diagram: true
+    idprefix: ''
+    idseparator: '-'
+    source-highlighter: highlightjs-ext
+

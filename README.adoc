@@ -1,0 +1,41 @@
+= Antora extensions demo
+
+This is a demo repository which shows how different extensions for Antora can work together.
+
+== Contents of this repository
+
+The extensions featured here are:
+
+https://gitlab.com/antora/antora-lunr-extension[Antora Lunr]:: Create a search index for the site which is built with JavaScript can be served from a static site with no additional backend.
+
+https://gitlab.com/antora/antora-collector-extension[Antora Collector]:: Generate content from outside of Git and use it like any other content.
+
+https://gitlab.com/antora/antora-assembler[Antora Assembler]:: Take all pages of an Antora component
+
+== What's different from a real project
+
+This is demo project some things are simplified which would be different in a real project:
+
+* Documentation (the content) and Playbook (the representation) usually live in different Git repositories.
++
+The documentation can even be split out to multiple Git repositories which would be combined with one playbook per published website.
+
+* Different versions of the documentation live usually in different branches.
++
+In this example the different versions are stored in different folders to allow for a simpler navigation.
+
+* The playbook folder contains only an author-style playbook which uses the local repository. This is sufficient for a local exploration.
++
+In a production setup, the real playbook would use a URL for the Git repository and build usually different
+
+== See the result
+
+This project is being published via a GitHub action to a demo site.
+
+Go to TODO to see the result in your browser.
+
+== Further reading
+
+To find out more about Antora, see https://docs.antora.org/antora/latest/ for details.
+
+As a project which uses Antora Collector and Antora Assembler, see the Eclipse Che Docs at https://github.com/eclipse-che/che-docs.

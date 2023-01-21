@@ -1,0 +1,4 @@
+# ROOT = startpage
+name: ROOT
+# no version as it is the start page
+version: ~
