@@ -1,2 +1,11 @@
 name: content
+title: Content Module
 version: '2.0'
+nav:
+  - modules/ROOT/nav.adoc
+ext:
+  collector:
+    run:
+      command: node docs/content_v2/generate-files.js
+    scan:
+      dir: build/generated-files

@@ -51,10 +51,11 @@ GEM
     ttfunk (1.7.0)
 
 PLATFORMS
+  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
   asciidoctor-pdf
 
 BUNDLED WITH
-   2.3.7
+   2.4.4

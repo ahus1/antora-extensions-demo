@@ -1,2 +1,5 @@
 name: content
+title: Content Module
 version: '1.0'
+nav:
+  - modules/ROOT/nav.adoc

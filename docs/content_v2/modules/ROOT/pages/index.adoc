@@ -5,4 +5,3 @@
 :page-aliases: old-page-page.adoc
 
 This some content from version 2.
-

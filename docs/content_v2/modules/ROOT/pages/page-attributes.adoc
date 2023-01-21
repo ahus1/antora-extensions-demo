@@ -1,0 +1,49 @@
+= Page Attributes
+:description: Description for the metadata
+:keywords: keyword1, keyword2
+
+Page attributes keep the metadata of each page.
+
+https://docs.antora.org/antora-ui-default/templates/[How to use them in the UI template].
+
+[%autowidth]
+|===
+|Page attribute |Value
+
+|page-component-title
+|{page-component-title}
+
+|page-component-version
+|{page-component-version}
+
+|page-module
+|{page-module}
+
+|page-origin-branch
+|{page-origin-branch}
+
+|page-origin-refname
+|{page-origin-refname}
+
+|page-origin-refhash
+|{page-origin-refhash}
+
+|page-origin-reftype
+|{page-origin-reftype}
+
+|page-origin-start-path
+|{page-origin-start-path}
+
+|page-origin-type
+|{page-origin-type}
+
+|page-origin-url
+|{page-origin-url}
+
+|description
+|{description}
+
+|keywords
+|{keywords}
+
+|===

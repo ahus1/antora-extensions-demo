@@ -1,0 +1,7 @@
+{{#if (eq page.displayVersion page.attributes.version-current)}}
+    {{!-- For version that equals the current defined in playbook, add current banner --}}
+    {{> banner-current}}
+{{else}}
+    {{!-- For all other scenarios, considered outdated --}}
+    {{> banner-outdated}}
+{{/if}}

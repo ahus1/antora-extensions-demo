@@ -1,0 +1,7 @@
+root_level: 0
+component_versions: '*'
+build:
+  command: bundle exec asciidoctor-pdf
+asciidoc:
+  attributes:
+    attribute-name-here: attribute-value-here

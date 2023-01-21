@@ -32,7 +32,7 @@ In a production setup, the real playbook would use a URL for the Git repository 
 
 This project is being published via a GitHub action to a demo site.
 
-Go to TODO to see the result in your browser.
+Go to https://ahus1.github.io/antora-extensions-demo/ to see the result in your browser.
 
 == Further reading
 

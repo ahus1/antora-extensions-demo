@@ -1,0 +1,19 @@
+---
+title:
+  maintitle: maintitle
+  subtitle: subtitle
+list:
+  - element1
+  - element2
+---
+= Frontmatter example
+
+This page contains some front matter in the source.
+
+A custom extension in `playbook/lib/frontmatter.js` extracts it at build time.
+
+[source,subs="attributes+"]
+----
+{front-matter}
+----
+

@@ -5,13 +5,13 @@ site:
   start_page: ROOT::index.adoc
 content:
   sources:
-    - url: ..
+    - url: https://github.com/ahus1/antoa-extensions-demo
       start_paths:
         - docs/content_v1
         - docs/content_v2
         - docs/startpage
       branches:
-        - 'HEAD'
+        - 'main'
 
 urls:
   latest_version_segment: current
