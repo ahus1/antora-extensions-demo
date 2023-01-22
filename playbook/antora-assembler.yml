@@ -1,7 +1,9 @@
+# See https://gitlab.com/antora/antora-assembler for the docs
 root_level: 0
 component_versions: '*'
 build:
   command: bundle exec asciidoctor-pdf
+  keep_aggregate_source: true
 asciidoc:
   attributes:
     attribute-name-here: attribute-value-here

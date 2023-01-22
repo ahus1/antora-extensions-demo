@@ -9,8 +9,12 @@ The extensions featured here are:
 https://gitlab.com/antora/antora-lunr-extension[Antora Lunr]:: Create a search index for the site which is built with JavaScript can be served from a static site with no additional backend.
 
 https://gitlab.com/antora/antora-collector-extension[Antora Collector]:: Generate content from outside of Git and use it like any other content.
++
+Go to xref:docs/content_v2/antora.yml[] to follow some bread crumbs how it has been configured.
 
 https://gitlab.com/antora/antora-assembler[Antora Assembler]:: Take all pages of an Antora component
++
+Go to xref:playbook/antora-assembler.yml[] to follow some bread crumbs how it has been configured.
 
 == What's different from a real project
 
@@ -33,6 +37,10 @@ In a production setup, the real playbook would use a URL for the Git repository 
 This project is being published via a GitHub action to a demo site.
 
 Go to https://ahus1.github.io/antora-extensions-demo/ to see the result in your browser.
+
+== Building
+
+To build this project manually, see xref:.github/workflows/docs-pages.yml[] or xref:playbook/BUILDING.adoc[]
 
 == Further reading
 

@@ -1,4 +1,4 @@
-{{#if (eq page.displayVersion page.attributes.version-current)}}
+{{#if (eq page.displayVersion page.component.latest.displayVersion)}}
     {{!-- For version that equals the current defined in playbook, add current banner --}}
     {{> banner-current}}
 {{else}}

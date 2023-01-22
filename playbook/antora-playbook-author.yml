@@ -1,6 +1,6 @@
 site:
   title: Antora Extension Demo Site
-  # the 404, site-map, and canonical urls are only generated when a url is defined
+  # the 404, site-map, and canonical urls are only generated when a URL is defined
   url: https://ahus1.github.io/antora-extensions-demo
   start_page: ROOT::index.adoc
 content:

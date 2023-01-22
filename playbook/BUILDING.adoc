@@ -1,0 +1,71 @@
+= Building
+
+This describes how to build this demo Antora site with extensions.
+
+== Prerequisites
+
+. Node version 16 or later installed to build the Antora website
+. Ruby and Bundler installed to allow Antora Assembler to create a PDF from the monolithic AsciiDoc file of a component
+
+== Building a local preview site
+
+This builds the site for a local preview for an author:
+
+. Install the Node dependencies.
++
+Run this once, and again after any extensions and versions for Antora have changed.
++
+[source]
+----
+npm install
+----
+
+. Install the Ruby dependencies.
++
+Run this once, and again after any extensions and versions for Asciidoctor PDF have changed.
++
+[source]
+----
+bundler install
+----
+
+. Build a local preview from the checked-out workspace, possibly with local, not-yet checked in changes.
++
+Run this after any change to the content or the scripts that collect or aggregate content.
++
+[source]
+----
+npm run author
+----
+
+. Run a local webserver and preview the contents.
++
+This will spawn a process. Consider opening it in another terminal window,
+and re-run the previous step (build of the local preview) in another window.
++
+[source]
+----
+npm run serve
+----
+
+== Variant: Build the production site
+
+Do this to build a production site from committed content with production site settings, instead of a local author's preview.
+Usually Antora content lives in multiple Git repositories and branches, and Antora takes care of checking out that content.
+
+The full procedure has been automated in the GitHub workflow at xref:../.github/workflows/docs-pages.yml[/.github/workflows/docs-pages.yml]
+
+. After installing the dependencies for Node and Ruby as in the previous procedure, run the following command.
++
+This populates the `_site` folder with the static content.
++
+[source]
+----
+npm run build
+----
+
+. Publish the contents of the `_site` folder to a webserver.
+
+
+
+

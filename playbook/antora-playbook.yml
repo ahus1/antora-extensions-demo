@@ -53,6 +53,5 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     source-highlighter: highlightjs-ext
-    page-version-current: '2.0'
     skip-front-matter: ''
 

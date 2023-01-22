@@ -7,14 +7,9 @@
             </td>
             <td class="content">
                 You are viewing documentation for an outdated version!
-                {{#each page.versions}}
-                    {{#if (eq @root.page.attributes.version-current ./displayVersion)}}
-                    <p>
-                        If you want to view the latest stable version of this page, please go <a
-                            href="{{{@root.siteRootPath}}}{{{@root.page.latest.url}}}">here</a>.
-                        {{break}}
-                    {{/if}}
-                {{/each}}
+                If you want to view the latest stable version of this page, please go <a
+                    href="{{{siteRootPath}}}{{{page.latest.url}}}">here</a>.
+                {{break}}
             </td>
         </tr>
         </tbody>

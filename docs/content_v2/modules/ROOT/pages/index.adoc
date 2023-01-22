@@ -5,3 +5,5 @@
 :page-aliases: old-page-page.adoc
 
 This some content from version 2.
+
+Download the PDF for this component: link:/antora-extensions-demo/content/{page-version}/{page-component-name}-module.pdf[{page-component-name}-module.pdf]
