@@ -1,10 +1,18 @@
-= Antora extensions demo
+= Creating a content pipeline with Antora
 
-This is a demo repository which shows how different extensions for Antora can work together.
+This is a demo repository shows how to:
 
-== Contents of this repository
+* Using Antora and its extensions to collects AsciiDoc content from Git and content-generating scripts.
+* Publish the content on a website and use it also in other places like a PDF.
 
-The extensions featured here are:
+== This repository features
+
+Main application:
+
+https://antora.org/[Antora]::
+The multi-repository documentation site generator for tech writers who ♥ writing in AsciiDoc.
+
+The extensions:
 
 https://gitlab.com/antora/antora-lunr-extension[Antora Lunr]:: Create a search index for the site which is built with JavaScript can be served from a static site with no additional backend.
 
@@ -28,9 +36,10 @@ The documentation can even be split out to multiple Git repositories which would
 +
 In this example the different versions are stored in different folders to allow for a simpler navigation.
 
-* The playbook folder contains only an author-style playbook which uses the local repository. This is sufficient for a local exploration.
+* The playbook folder contains an author-style playbook which uses the local checked-out repository's worktree.
+This is idea for a local exploration and experimentation.
 +
-In a production setup, the real playbook would use a URL for the Git repository and build usually different
+In a production setup, the real playbook uses a URL for the Git repository and can build different content/versions and use different attributes.
 
 == See the result
 
@@ -47,3 +56,8 @@ To build this project manually, see xref:.github/workflows/docs-pages.yml[] or x
 To find out more about Antora, see https://docs.antora.org/antora/latest/ for details.
 
 As a project which uses Antora Collector and Antora Assembler, see the Eclipse Che Docs at https://github.com/eclipse-che/che-docs.
+
+== Copyright and Licensing
+
+Copyright (C) 2023-present Alexander Schwartz and the individual contributors.
+Released under the Mozilla Public License Version 2.0 (see link:LICENSE[LICENSE]).
