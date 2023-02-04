@@ -7,6 +7,8 @@ This is a demo repository shows how to:
 
 This is part of our https://fosdem.org/2023/schedule/event/collab_antora/[presentation at FOSDEM 2023], which will be available as a recording after 2023-02-05.
 
+See https://www.ahus1.de/post/content-pipeline-antora[this blog post for all other resources] (Slides, etc.)
+
 == This repository features
 
 Main application:
