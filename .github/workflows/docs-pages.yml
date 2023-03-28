@@ -2,6 +2,8 @@ name: Publishing Documentation Site
 
 on:
   push:
+    branches:
+      - main
 
 concurrency:
   # Only run once for latest commit per ref and cancel other (previous) runs.
@@ -28,7 +30,7 @@ jobs:
         working-directory: playbook
         # language=shell
         env:
-          BUNDLE_PATH:
+          BUNDLE_PATH: ''
         run: |
           npm install
           npm run build
