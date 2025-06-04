@@ -13,7 +13,7 @@
     "@antora/cli": "^3.1.10",
     "@antora/collector-extension": "^1.0.1",
     "@antora/lunr-extension": "^1.0.0-alpha.10",
-    "@antora/pdf-extension": "^1.0.0-alpha.11",
+    "@antora/pdf-extension": "^1.0.0-beta.1",
     "@antora/site-generator": "^3.1.10",
     "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.18.1",
